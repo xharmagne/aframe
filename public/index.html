@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <a-scene>
+
+    <a-entity camera="userHeight: 1.6" look-controls>
+      <a-entity cursor="fuse: true;" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat">
+        <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1000" fill="forwards" from="1 1 1" to="0.08 0.08 0.08"></a-animation>
+      </a-entity>
+    </a-entity>
+
+    <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box> -->
+    <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF8c8c" shadow></a-sphere> -->
+    <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder> -->
+
+    <a-entity circle-of-spheres />
+
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4" shadow></a-plane> -->
+    <a-sky color="#224467"></a-sky>
+
+  </a-scene>
+</body>
+
+</html>
