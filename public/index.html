@@ -10,7 +10,8 @@
   <a-scene>
 
     <a-entity camera="userHeight: 1.6" look-controls>
-      <a-entity cursor="fuse: true;" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat">
+      <a-entity cursor="fuse: true; fuseTimeout: 800" position="0 0 -1" raycaster=" objects: .clickable" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+        material="color: black; shader: flat">
         <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1000" fill="forwards" from="1 1 1" to="0.08 0.08 0.08"></a-animation>
       </a-entity>
     </a-entity>
@@ -21,7 +22,7 @@
 
     <a-entity circle-of-spheres />
 
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4" shadow></a-plane> -->
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4" shadow></a-plane>
     <a-sky color="#224467"></a-sky>
 
   </a-scene>
