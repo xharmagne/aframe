@@ -1,4 +1,4 @@
-import AFRAME from "aframe";
+// import AFRAME from "aframe";
 import * as particleSystem from "aframe-particle-system-component";
 
 AFRAME.registerComponent("circle-of-spheres", {
